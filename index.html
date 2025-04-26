@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nexora Assist</title>
+  <style>
+    body {
+      font-family: 'Arial', glacial-indifference;
+      background-color: #E1E1E1;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      color: #333;
+    }
+    h1 {
+      color: #2c3e50;
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #34495e;
+      margin-top: 50px;
+      font-size: 2em;
+    }
+    p {
+      color: #555;
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+    .categories {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+      gap: 20px;
+    }
+    .category {
+      background-color: #A6A6A6;
+      color: white;
+      padding: 20px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.2em;
+      transition: background-color 0.3s;
+    }
+    .category:hover {
+      background-color: #8c8c8c;
+    }
+    form {
+      background-color: #A6A6A6;
+      padding: 30px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 30px;
+      margin-bottom: 50px;
+      color: white;
+    }
+    input, textarea {
+      display: block;
+      width: 300px;
+      margin: 10px auto;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1a242f;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Nexora Assist</h1>
+  <p>Your Life Assistant</p>
+
+  <!-- About Us -->
+  <h2>About Us</h2>
+  <p>At Nexora Assist we make your life easier with day-to-day tasks. With a click of a button, everything can be as perfect as it needs to be!</p>
+
+  <!-- What Can We Assist With -->
+  <h2>What Can We Assist With</h2>
+  <div class="categories">
+    <a class="category" href="https://example.com/cv" target="_blank">Curriculum Vitae</a>
+    <a class="category" href="https://example.com/budgeting" target="_blank">Budgeting</a>
+    <a class="category" href="https://example.com/invoice" target="_blank">Invoice</a>
+    <a class="category" href="https://example.com/calendar" target="_blank">Calendar/Planner</a>
+    <a class="category" href="https://example.com/notes" target="_blank">Notes</a>
+  </div>
+
+  <!-- Reviews Section -->
+  <h2>Reviews</h2>
+  <p>Leave a review below. (Note: Reviews will be shown once authorized.)</p>
+  <form action="#" method="POST">
+    <input type="text" name="reviewer" placeholder="Your Name" required>
+    <textarea name="review" rows="4" placeholder="Your Review" required></textarea>
+    <button type="submit">Submit Review</button>
+  </form>
+
+  <!-- Contact Us Section -->
+  <h2>Contact Us</h2>
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <input type="text" name="name" placeholder="Enter Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="tel" name="phone" placeholder="Phone" required>
+    <textarea name="message" rows="4" placeholder="Type Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+
+  <!-- Footer -->
+  <footer>
+    © Copyrights of Nexora Assist 2026
+  </footer>
+
+</body>
+</html>
