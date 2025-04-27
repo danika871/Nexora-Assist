@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - Nexora Assist</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: #054646;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      width: 300px;
+      text-align: center;
+    }
+
+    h2 {
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background-color: white;
+      color: #054646;
+      font-size: 18px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .submit-btn:hover {
+      background-color: #d1f7f7;
+      color: #054646;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="email" id="loginEmail" placeholder="Email Address" required><br>
+      <button type="submit" class="submit-btn">Login</button>
+    </form>
+  </div>
+
+  <script>
+    // Check login info from localStorage
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault(); // Stop form from refreshing the page
+
+      const loginEmail = document.getElementById('loginEmail').value;
+      const storedEmail = localStorage.getItem('userEmail');
+
+      if (loginEmail === storedEmail) {
+        alert('Login successful! Welcome back!');
+        // You could redirect to a dashboard page if you want
+        window.location.href = 'welcome.html'; 
+      } else {
+        alert('Login failed. Please check your email or sign up first.');
+      }
+    });
+  </script>
+
+</body>
+</html>
