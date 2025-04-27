@@ -74,6 +74,15 @@
       display: inline-block;
       width: 250px;
     }
+    .add-expense {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .add-expense input {
+      width: 70%;
+    }
     canvas {
       margin-top: 30px;
       background: white;
@@ -102,6 +111,14 @@
         <option value="CAD">CAD (Canadian Dollar) 🇨🇦</option>
       </select>
 
+      <div class="add-expense">
+        <input type="text" id="expenseName" placeholder="Add a new expense (e.g. Rent, Utilities)">
+        <input type="number" id="expenseAmount" placeholder="Amount">
+        <button onclick="addExpense()">Add Expense</button>
+      </div>
+
+      <div id="customExpenses"></div>
+
       <button onclick="calculateBudget()">Calculate Budget</button>
       <button onclick="downloadPDF()">Download as PDF</button>
     </div>
@@ -112,6 +129,41 @@
   </div>
 
   <script>
+    let customExpenses = [];
+
+    function addExpense() {
+      const expenseName = document.getElementById('expenseName').value;
+      const expenseAmount = parseFloat(document.getElementById('expenseAmount').value);
+
+      if (expenseName && !isNaN(expenseAmount) && expenseAmount > 0) {
+        customExpenses.push({ name: expenseName, amount: expenseAmount });
+        displayCustomExpenses();
+        document.getElementById('expenseName').value = '';
+        document.getElementById('expenseAmount').value = '';
+      } else {
+        alert('Please provide a valid expense name and amount.');
+      }
+    }
+
+    function displayCustomExpenses() {
+      const customExpensesContainer = document.getElementById('customExpenses');
+      customExpensesContainer.innerHTML = '';
+
+      customExpenses.forEach((expense, index) => {
+        customExpensesContainer.innerHTML += `
+          <div class="category">
+            <strong>${expense.name}:</strong> ${expense.amount.toFixed(2)}
+            <button onclick="removeExpense(${index})">Remove</button>
+          </div>
+        `;
+      });
+    }
+
+    function removeExpense(index) {
+      customExpenses.splice(index, 1);
+      displayCustomExpenses();
+    }
+
     function calculateBudget() {
       const income = parseFloat(document.getElementById('income').value);
       const currency = document.getElementById('currency').value;
@@ -125,7 +177,7 @@
         return;
       }
 
-      const budget = {
+      let budget = {
         'Housing (Rent/Mortgage)': income * 0.25,
         'Utilities (Electricity, Water, Internet)': income * 0.08,
         'Groceries': income * 0.12,
@@ -142,6 +194,11 @@
         'Gifts/Donations': income * 0.02,
         'Miscellaneous': income * 0.02,
       };
+
+      // Adding custom expenses
+      customExpenses.forEach(expense => {
+        budget[expense.name] = expense.amount;
+      });
 
       const labels = [];
       const data = [];
