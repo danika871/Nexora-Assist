@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign Up - Nexora Assist</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .signup-container {
+      background-color: #054646;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      width: 300px;
+      text-align: center;
+    }
+
+    h2 {
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background-color: white;
+      color: #054646;
+      font-size: 18px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .submit-btn:hover {
+      background-color: #d1f7f7;
+      color: #054646;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="signup-container">
+    <h2>Sign Up</h2>
+    <form id="signupForm">
+      <input type="email" id="email" placeholder="Email Address" required><br>
+      <input type="tel" id="phone" placeholder="Phone Number" required><br>
+      <button type="submit" class="submit-btn">Register</button>
+    </form>
+  </div>
+
+  <script>
+    // Save the signup information to localStorage
+    document.getElementById('signupForm').addEventListener('submit', function(e) {
+      e.preventDefault(); // Stop form from refreshing the page
+
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+
+      // Save to local storage
+      localStorage.setItem('userEmail', email);
+      localStorage.setItem('userPhone', phone);
+
+      alert('Signup Successful! You can now login.');
+      window.location.href = 'login.html'; // Redirect to login page
+    });
+  </script>
+
+</body>
+</html>
