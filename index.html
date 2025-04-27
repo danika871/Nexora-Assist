@@ -6,76 +6,65 @@
   <title>Nexora Assist</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #ffffff;
       margin: 0;
       padding: 0;
-    }
-    header {
-      background-color: #2f2f2f;
-      color: #ffffff;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .subheading {
-      color: #cccccc;
-      font-size: 1.5rem;
-      margin-top: 10px;
-    }
-    .container {
-      padding: 20px;
-      text-align: center;
-    }
-    h2 {
-      color: #333333;
-      margin-top: 40px;
-    }
-    p {
-      color: #555555;
-      max-width: 600px;
-      margin: 10px auto 40px;
-      line-height: 1.6;
-    }
-    .buttons {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f4f4f4;
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
-      gap: 20px;
+      height: 100vh;
     }
-    .button-link {
-      background-color: #4CAF50;
+
+    .container {
+      text-align: center;
+      background-color: #054646;
+      padding: 50px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    h1 {
       color: white;
-      text-decoration: none;
-      padding: 15px 30px;
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #d1f7f7;
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+
+    .button {
+      display: block;
+      width: 200px;
+      padding: 15px;
+      margin: 10px auto;
+      background-color: #054646;
+      color: white;
+      border: 2px solid white;
       border-radius: 8px;
       font-size: 18px;
-      transition: background-color 0.3s;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
     }
-    .button-link:hover {
-      background-color: #45a049;
+
+    .button:hover {
+      background-color: white;
+      color: #054646;
     }
   </style>
 </head>
-
 <body>
 
-<header>
-  <h1>Nexora Assist</h1>
-  </subheading>
-  <p class="subheading">Your Life Assistant</p>
-  <color; white>
-</header>
-
-<div class="container">
-  <h2>About Us</h2>
-  <p>At Nexora Assist, we make your life easier with day-to-day tasks. With a click of a button, everything can be as perfect as it needs to be!</p>
-
-  <h2>We Can Assist With:</h2>
-  <div class="buttons">
-    <a href="curriculum-vitae.html" class="button-link">Curriculum Vitae Templates</a>
-    <a href="budgeting.html" class="button-link">Budgeting</a>
+  <div class="container">
+    <h1>Nexora Assist</h1>
+    <p>Making each day easier</p>
+    <a href="signup.html" class="button">Sign Up</a>
+    <a href="login.html" class="button">Login</a>
   </div>
-</div>
 
 </body>
 </html>
