@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products - Nexora Assist</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+
+    .products-container {
+      background-color: #054646;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      width: 90%;
+      max-width: 1000px;
+      text-align: center;
+    }
+
+    h2 {
+      color: white;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .category-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .category-box {
+      background-color: #d1f7f7;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      font-size: 18px;
+      font-weight: bold;
+      color: #054646;
+      text-align: center;
+      transition: background-color 0.3s, color 0.3s;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .category-box:hover {
+      background-color: #054646;
+      color: white;
+    }
+    
+    /* Mobile-friendly adjustments */
+    @media (max-width: 768px) {
+      .category-container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="products-container">
+    <h2>Explore Our Categories</h2>
+
+    <div class="category-container">
+      <a href="books.html" class="category-box">Books</a>
+      <a href="bakery.html" class="category-box">Bakery</a>
+      <a href="garden-services.html" class="category-box">Garden Services</a>
+      <a href="thrifting.html" class="category-box">Thrifting</a>
+      <a href="pet-groomers.html" class="category-box">Pet Groomers</a>
+      <a href="hair-stylist.html" class="category-box">Hair Stylist</a>
+      <a href="barber.html" class="category-box">Barber</a>
+      <a href="art.html" class="category-box">Art</a>
+      <a href="catering-service.html" class="category-box">Catering Service</a>
+      <a href="car-wash.html" class="category-box">Car Wash</a>
+      <a href="event-planning.html" class="category-box">Event Planning</a>
+      <a href="cleaning-services.html" class="category-box">Cleaning Services</a>
+      <a href="babysitter.html" class="category-box">Babysitter</a>
+      <a href="childcare-centre.html" class="category-box">Childcare Centre</a>
+      <a href="homeschool.html" class="category-box">Homeschool</a>
+      <a href="photographer.html" class="category-box">Photographer</a>
+      <a href="boutique.html" class="category-box">Boutique</a>
+      <a href="nails.html" class="category-box">Nails</a>
+      <a href="massage-therapy.html" class="category-box">Massage Therapy</a>
+      <a href="mobile-phone-repair.html" class="category-box">Mobile Phone Repair</a>
+      <a href="interior-designer.html" class="category-box">Interior Designer</a>
+      <a href="salon.html" class="category-box">Salon</a>
+      <a href="tailoring-services.html" class="category-box">Tailoring Services</a>
+      <a href="security-systems.html" class="category-box">Security Systems</a>
+      <a href="engraving.html" class="category-box">Engraving</a>
+      <a href="pet-store.html" class="category-box">Pet Store</a>
+      <a href="gifting.html" class="category-box">Gifting</a>
+      <a href="party-planner.html" class="category-box">Party Planner</a>
+    </div>
+  </div>
+
+</body>
+</html>
