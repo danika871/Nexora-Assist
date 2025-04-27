@@ -1,0 +1,1103 @@
+# Nexora-Assist
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Nexora Assist</title>
+   <style>
+     body {
+       font-family: 'Arial', CINZEL;
+       background-color: #6DADAD;
+       margin: 0;
+       padding: 20px;
+       text-align: center;
+       color: #333;
+     }
+     h1 {
+       color: #2c3e50;
+       font-size: 3em;
+       margin-bottom: 10px;
+     }
+     h2 {
+       color: #34495e;
+       margin-top: 50px;
+       font-size: 2em;
+     }
+     p {
+       color: #555;
+       font-size: 1.2em;
+       max-width: 800px;
+       margin: 0 auto;
+       margin-bottom: 40px;
+     }
+     .categories {
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+       margin-bottom: 50px;
+       gap: 20px;
+     }
+     .category {
+       background-color: #AEFFFF;
+       color: Blue;
+       padding: 20px 30px;
+       border-radius: 8px;
+       text-decoration: none;
+       font-size: 1.2em;
+       transition: background-color 0.3s;
+     }
+     .category:hover {
+       background-color: #8c8c8c;
+     }
+     form {
+       background-color: #A6A6A6;
+       padding: 30px;
+       border-radius: 8px;
+       display: inline-block;
+       margin-top: 30px;
+       margin-bottom: 50px;
+       color: white;
+     }
+     input, textarea {
+       display: block;
+       width: 300px;
+       margin: 10px auto;
+       padding: 10px;
+       border: none;
+       border-radius: 4px;
+     }
+     button {
+       background-color: #2c3e50;
+       color: white;
+       padding: 10px 20px;
+       border: none;
+       border-radius: 4px;
+       cursor: pointer;
+     }
+     button:hover {
+       background-color: #1a242f;
+     }
+     footer {
+       margin-top: 50px;
+       font-size: 0.9em;
+       color: #555;
+     }
+   </style>
+ </head>
+ <body>
+ 
+   <h1>Nexora Assist</h1>
+   <p>Your Life Assistant</p>
+ 
+   <!-- About Us -->
+   <h2>About Us</h2>
+   <p>At Nexora Assist we make your life easier with day-to-day tasks. With a click of a button, everything can be as perfect as it needs to be!</p>
+ 
+   <!-- What Can We Assist With -->
+   <h2>What Can We Assist With</h2>
+   <div class="categories">
+     <a class="category" href="https://example.com/cv" target="_blank">Curriculum Vitae</a>
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Curriculum Vitae - Your Name</title>
+  <link rel="stylesheet" href="cv.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Your Name</h1>
+      <p>Job Title | Location | Email | Phone | LinkedIn</p>
+    </header>
+
+    <section class="profile">
+      <h2>Profile</h2>
+      <p>Short paragraph introducing yourself, your experience, and career goals.</p>
+    </section>
+
+    <section class="experience">
+      <h2>Experience</h2>
+      <div class="job">
+        <h3>Job Title - Company Name</h3>
+        <span>Start Date – End Date</span>
+        <ul>
+          <li>Key achievement or responsibility #1</li>
+          <li>Key achievement or responsibility #2</li>
+        </ul>
+      </div>
+      <!-- Repeat for other jobs -->
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      <div class="school">
+        <h3>Degree - Institution</h3>
+        <span>Graduation Year</span>
+        <p>Optional details like GPA, awards, etc.</p>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Skill 1</li>
+        <li>Skill 2</li>
+        <li>Skill 3</li>
+      </ul>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Project Title</h3>
+        <p>Short description, technologies used, maybe a link to GitHub or a live project.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Your Name</p>
+    </footer>
+  </div>
+</body>
+</html>
+     body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header, section {
+  margin-bottom: 30px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+header p {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #555;
+}
+
+section h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.job, .school, .project {
+  margin-bottom: 20px;
+}
+
+.job h3, .school h3, .project h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.job span, .school span {
+  font-size: 14px;
+  color: #888;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 40px;
+}
+
+     <a class="category" href="https://example.com/budgeting" target="_blank">Budgeting</a>
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Global Smart Budget Calculator</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f0f2f5;
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 48%;
+      padding: 12px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .results {
+      margin-top: 30px;
+    }
+    .category {
+      margin-bottom: 10px;
+      padding: 10px;
+      background: #fafafa;
+      border: 1px solid #eee;
+      border-radius: 5px;
+    }
+    .category strong {
+      display: inline-block;
+      width: 250px;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    canvas {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container" id="budgetContainer">
+  <h1>Global Smart Budget Calculator 🌍</h1>
+
+  <label for="income">Enter your monthly income (after tax):</label>
+  <input type="number" id="income" placeholder="e.g. 5000">
+
+  <label for="currency">Select your currency:</label>
+  <select id="currency">
+    <option value="ZAR">ZAR (Rand) 🇿🇦</option>
+    <option value="USD">USD (Dollar) 🇺🇸</option>
+    <option value="EUR">EUR (Euro) 🇪🇺</option>
+    <option value="GBP">GBP (Pound) 🇬🇧</option>
+    <option value="INR">INR (Rupee) 🇮🇳</option>
+    <option value="AUD">AUD (Australian Dollar) 🇦🇺</option>
+    <option value="CAD">CAD (Canadian Dollar) 🇨🇦</option>
+  </select>
+
+  <div class="buttons">
+    <button onclick="calculateBudget()">Calculate Budget</button>
+    <button onclick="downloadPDF()">Download as PDF</button>
+  </div>
+
+  <div class="results" id="results"></div>
+
+  <canvas id="budgetChart"></canvas>
+</div>
+
+<script>
+function calculateBudget() {
+  const income = parseFloat(document.getElementById('income').value);
+  const currency = document.getElementById('currency').value;
+  const results = document.getElementById('results');
+  const currencySymbol = getCurrencySymbol(currency);
+
+  results.innerHTML = '';
+
+  if (isNaN(income) || income <= 0) {
+    results.innerHTML = '<p style="color:red;">Please enter a valid income amount.</p>';
+    return;
+  }
+
+  const budget = {
+    'Housing (Rent/Mortgage)': income * 0.25,
+    'Utilities (Electricity, Water, Internet)': income * 0.08,
+    'Groceries': income * 0.12,
+    'Transportation (Fuel, Public Transport)': income * 0.08,
+    'Insurance (Health, Car, Home)': income * 0.07,
+    'School Fees / Education': income * 0.07,
+    'Debt Repayments (Loans, Credit Cards)': income * 0.05,
+    'Emergency Savings': income * 0.08,
+    'Investments (Stocks, Retirement)': income * 0.05,
+    'Medical Expenses': income * 0.03,
+    'Entertainment (Movies, Dining Out)': income * 0.04,
+    'Clothing and Personal Care': income * 0.03,
+    'Subscriptions (Netflix, Spotify, etc.)': income * 0.02,
+    'Gifts/Donations': income * 0.02,
+    'Miscellaneous': income * 0.02,
+  };
+
+  const labels = [];
+  const data = [];
+
+  for (const [category, amount] of Object.entries(budget)) {
+    results.innerHTML += `
+      <div class="category">
+        <strong>${category}:</strong> ${currencySymbol}${amount.toFixed(2)}
+      </div>
+    `;
+    labels.push(category);
+    data.push(amount.toFixed(2));
+  }
+
+  // Total
+  const total = Object.values(budget).reduce((acc, val) => acc + val, 0);
+  results.innerHTML += `
+    <div class="category" style="font-weight: bold; background-color: #dff0d8;">
+      <strong>Total Allocated:</strong> ${currencySymbol}${total.toFixed(2)}
+    </div>
+  `;
+
+  // Draw pie chart
+  renderChart(labels, data);
+}
+
+function getCurrencySymbol(currency) {
+  switch (currency) {
+    case 'USD': return '$';
+    case 'EUR': return '€';
+    case 'GBP': return '£';
+    case 'INR': return '₹';
+    case 'AUD': return 'A$';
+    case 'CAD': return 'C$';
+    case 'ZAR': return 'R';
+    default: return '';
+  }
+}
+
+function renderChart(labels, data) {
+  const ctx = document.getElementById('budgetChart').getContext('2d');
+  if (window.budgetChart) {
+    window.budgetChart.destroy();
+  }
+  window.budgetChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: 'Budget Breakdown',
+        data: data,
+        backgroundColor: [
+          '#FF6384', '#36A2EB', '#FFCE56', '#9CCC65', '#FFA726',
+          '#AB47BC', '#26C6DA', '#EC407A', '#29B6F6', '#66BB6A',
+          '#EF5350', '#8D6E63', '#42A5F5', '#D4E157', '#7E57C2'
+        ]
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'bottom',
+        }
+      }
+    }
+  });
+}
+
+function downloadPDF() {
+  const element = document.getElementById('budgetContainer');
+  html2pdf().from(element).save('Smart_Budget_Report.pdf');
+}
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Global Smart Budget Calculator</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f0f2f5;
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 48%;
+      padding: 12px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .results {
+      margin-top: 30px;
+    }
+    .category {
+      margin-bottom: 10px;
+      padding: 10px;
+      background: #fafafa;
+      border: 1px solid #eee;
+      border-radius: 5px;
+    }
+    .category strong {
+      display: inline-block;
+      width: 250px;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    canvas {
+      margin-top: 30px;
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container" id="budgetContainer">
+  <h1>Global Smart Budget Calculator 🌍</h1>
+
+  <label for="income">Enter your monthly income (after tax):</label>
+  <input type="number" id="income" placeholder="e.g. 5000">
+
+  <label for="currency">Select your currency:</label>
+  <select id="currency">
+    <option value="ZAR">ZAR (Rand) 🇿🇦</option>
+    <option value="USD">USD (Dollar) 🇺🇸</option>
+    <option value="EUR">EUR (Euro) 🇪🇺</option>
+    <option value="GBP">GBP (Pound) 🇬🇧</option>
+    <option value="INR">INR (Rupee) 🇮🇳</option>
+    <option value="AUD">AUD (Australian Dollar) 🇦🇺</option>
+    <option value="CAD">CAD (Canadian Dollar) 🇨🇦</option>
+  </select>
+
+  <div class="buttons">
+    <button onclick="calculateBudget()">Calculate Budget</button>
+    <button onclick="downloadPDF()">Download as PDF</button>
+  </div>
+
+  <div class="results" id="results"></div>
+
+  <canvas id="budgetChart" width="400" height="400"></canvas>
+</div>
+
+<script>
+function calculateBudget() {
+  const income = parseFloat(document.getElementById('income').value);
+  const currency = document.getElementById('currency').value;
+  const results = document.getElementById('results');
+  const currencySymbol = getCurrencySymbol(currency);
+
+  results.innerHTML = '';
+
+  if (isNaN(income) || income <= 0) {
+    results.innerHTML = '<p style="color:red;">Please enter a valid income amount.</p>';
+    return;
+  }
+
+  const budget = {
+    'Housing (Rent/Mortgage)': income * 0.25,
+    'Utilities (Electricity, Water, Internet)': income * 0.08,
+    'Groceries': income * 0.12,
+    'Transportation (Fuel, Public Transport)': income * 0.08,
+    'Insurance (Health, Car, Home)': income * 0.07,
+    'School Fees / Education': income * 0.07,
+    'Debt Repayments (Loans, Credit Cards)': income * 0.05,
+    'Emergency Savings': income * 0.08,
+    'Investments (Stocks, Retirement)': income * 0.05,
+    'Medical Expenses': income * 0.03,
+    'Entertainment (Movies, Dining Out)': income * 0.04,
+    'Clothing and Personal Care': income * 0.03,
+    'Subscriptions (Netflix, Spotify, etc.)': income * 0.02,
+    'Gifts/Donations': income * 0.02,
+    'Miscellaneous': income * 0.02,
+  };
+
+  const labels = [];
+  const data = [];
+
+  for (const [category, amount] of Object.entries(budget)) {
+    results.innerHTML += `
+      <div class="category">
+        <strong>${category}:</strong> ${currencySymbol}${amount.toFixed(2)}
+      </div>
+    `;
+    labels.push(category);
+    data.push(amount.toFixed(2));
+  }
+
+  // Total
+  const total = Object.values(budget).reduce((acc, val) => acc + val, 0);
+  results.innerHTML += `
+    <div class="category" style="font-weight: bold; background-color: #dff0d8;">
+      <strong>Total Allocated:</strong> ${currencySymbol}${total.toFixed(2)}
+    </div>
+  `;
+
+  // Draw pie chart
+  renderChart(labels, data);
+}
+
+function getCurrencySymbol(currency) {
+  switch (currency) {
+    case 'USD': return '$';
+    case 'EUR': return '€';
+    case 'GBP': return '£';
+    case 'INR': return '₹';
+    case 'AUD': return 'A$';
+    case 'CAD': return 'C$';
+    case 'ZAR': return 'R';
+    default: return '';
+  }
+}
+
+function renderChart(labels, data) {
+  const ctx = document.getElementById('budgetChart').getContext('2d');
+  if (window.budgetChart) {
+    window.budgetChart.destroy();
+  }
+  window.budgetChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: 'Budget Breakdown',
+        data: data,
+        backgroundColor: [
+          '#FF6384', '#36A2EB', '#FFCE56', '#9CCC65', '#FFA726',
+          '#AB47BC', '#26C6DA', '#EC407A', '#29B6F6', '#66BB6A',
+          '#EF5350', '#8D6E63', '#42A5F5', '#D4E157', '#7E57C2'
+        ]
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'bottom',
+        }
+      }
+    }
+  });
+}
+
+function downloadPDF() {
+  const container = document.getElementById('budgetContainer');
+  const chartCanvas = document.getElementById('budgetChart');
+
+  // Capture the Chart as Image
+  const chartImage = chartCanvas.toDataURL('image/png', 1.0);
+
+  // Clone the container to avoid affecting the main page
+  const clone = container.cloneNode(true);
+
+  // Replace Chart Canvas with an Image
+  const cloneChart = clone.querySelector('#budgetChart');
+  const img = new Image();
+  img.src = chartImage;
+  img.style.width = '100%';
+  img.style.marginTop = '20px';
+  cloneChart.replaceWith(img);
+
+  // Generate PDF
+  html2pdf().from(clone).save('Smart_Budget_Report_with_Chart.pdf');
+}
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Global Smart Budget Calculator</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f0f2f5;
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 48%;
+      padding: 12px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .results {
+      margin-top: 30px;
+    }
+    .category {
+      margin-bottom: 10px;
+      padding: 10px;
+      background: #fafafa;
+      border: 1px solid #eee;
+      border-radius: 5px;
+    }
+    .category strong {
+      display: inline-block;
+      width: 250px;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    canvas {
+      margin-top: 30px;
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container" id="budgetContainer">
+  <h1>Global Smart Budget Calculator 🌍</h1>
+
+  <label for="income">Enter your monthly income (after tax):</label>
+  <input type="number" id="income" placeholder="e.g. 5000">
+
+  <label for="currency">Select your currency:</label>
+  <select id="currency">
+    <option value="ZAR">ZAR (Rand) 🇿🇦</option>
+    <option value="USD">USD (Dollar) 🇺🇸</option>
+    <option value="EUR">EUR (Euro) 🇪🇺</option>
+    <option value="GBP">GBP (Pound) 🇬🇧</option>
+    <option value="INR">INR (Rupee) 🇮🇳</option>
+    <option value="AUD">AUD (Australian Dollar) 🇦🇺</option>
+    <option value="CAD">CAD (Canadian Dollar) 🇨🇦</option>
+  </select>
+
+  <div class="buttons">
+    <button onclick="calculateBudget()">Calculate Budget</button>
+    <button onclick="downloadPDF()">Download as PDF</button>
+  </div>
+
+  <div class="results" id="results"></div>
+
+  <canvas id="budgetChart" width="400" height="400"></canvas>
+</div>
+
+<script>
+function calculateBudget() {
+  const income = parseFloat(document.getElementById('income').value);
+  const currency = document.getElementById('currency').value;
+  const results = document.getElementById('results');
+  const currencySymbol = getCurrencySymbol(currency);
+
+  results.innerHTML = '';
+
+  if (isNaN(income) || income <= 0) {
+    results.innerHTML = '<p style="color:red;">Please enter a valid income amount.</p>';
+    return;
+  }
+
+  const budget = {
+    'Housing (Rent/Mortgage)': income * 0.25,
+    'Utilities (Electricity, Water, Internet)': income * 0.08,
+    'Groceries': income * 0.12,
+    'Transportation (Fuel, Public Transport)': income * 0.08,
+    'Insurance (Health, Car, Home)': income * 0.07,
+    'School Fees / Education': income * 0.07,
+    'Debt Repayments (Loans, Credit Cards)': income * 0.05,
+    'Emergency Savings': income * 0.08,
+    'Investments (Stocks, Retirement)': income * 0.05,
+    'Medical Expenses': income * 0.03,
+    'Entertainment (Movies, Dining Out)': income * 0.04,
+    'Clothing and Personal Care': income * 0.03,
+    'Subscriptions (Netflix, Spotify, etc.)': income * 0.02,
+    'Gifts/Donations': income * 0.02,
+    'Miscellaneous': income * 0.02,
+  };
+
+  const labels = [];
+  const data = [];
+
+  for (const [category, amount] of Object.entries(budget)) {
+    results.innerHTML += `
+      <div class="category">
+        <strong>${category}:</strong> ${currencySymbol}${amount.toFixed(2)}
+      </div>
+    `;
+    labels.push(category);
+    data.push(amount.toFixed(2));
+  }
+
+  // Total
+  const total = Object.values(budget).reduce((acc, val) => acc + val, 0);
+  results.innerHTML += `
+    <div class="category" style="font-weight: bold; background-color: #dff0d8;">
+      <strong>Total Allocated:</strong> ${currencySymbol}${total.toFixed(2)}
+    </div>
+  `;
+
+  // Draw pie chart
+  renderChart(labels, data);
+}
+
+function getCurrencySymbol(currency) {
+  switch (currency) {
+    case 'USD': return '$';
+    case 'EUR': return '€';
+    case 'GBP': return '£';
+    case 'INR': return '₹';
+    case 'AUD': return 'A$';
+    case 'CAD': return 'C$';
+    case 'ZAR': return 'R';
+    default: return '';
+  }
+}
+
+function renderChart(labels, data) {
+  const ctx = document.getElementById('budgetChart').getContext('2d');
+  if (window.budgetChart) {
+    window.budgetChart.destroy();
+  }
+  window.budgetChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: 'Budget Breakdown',
+        data: data,
+        backgroundColor: [
+          '#FF6384', '#36A2EB', '#FFCE56', '#9CCC65', '#FFA726',
+          '#AB47BC', '#26C6DA', '#EC407A', '#29B6F6', '#66BB6A',
+          '#EF5350', '#8D6E63', '#42A5F5', '#D4E157', '#7E57C2'
+        ]
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'bottom',
+        }
+      }
+    }
+  });
+}
+
+function downloadPDF() {
+  const container = document.getElementById('budgetContainer');
+  const chartCanvas = document.getElementById('budgetChart');
+
+  // Capture the Chart as Image
+  const chartImage = chartCanvas.toDataURL('image/png', 1.0);
+
+  // Clone the container to avoid affecting the main page
+  const clone = container.cloneNode(true);
+
+  // Replace Chart Canvas with an Image
+  const cloneChart = clone.querySelector('#budgetChart');
+  const img = new Image();
+  img.src = chartImage;
+  img.style.width = '100%';
+  img.style.marginTop = '20px';
+  cloneChart.replaceWith(img);
+
+  // Generate PDF
+  html2pdf().from(clone).save('Smart_Budget_Report_with_Chart.pdf');
+}
+</script>
+
+</body>
+</html>
+
+</body>
+</html>
+
+     <a class="category" href="https://example.com/invoice" target="_blank">Invoice</a>
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Invoice Generator</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f0f2f5;
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+    button {
+      width: 48%;
+      padding: 12px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .total {
+      text-align: right;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container" id="invoiceContainer">
+  <h1>Invoice Generator 💼</h1>
+
+  <label>Invoice Number:</label>
+  <input type="text" id="invoiceNumber" placeholder="e.g. 00123">
+
+  <label>Client Name:</label>
+  <input type="text" id="clientName" placeholder="e.g. John Doe">
+
+  <label>Invoice Date:</label>
+  <input type="date" id="invoiceDate">
+
+  <label>Currency:</label>
+  <select id="currency">
+    <option value="ZAR">ZAR (Rand) 🇿🇦</option>
+    <option value="USD">USD (Dollar) 🇺🇸</option>
+    <option value="EUR">EUR (Euro) 🇪🇺</option>
+    <option value="GBP">GBP (Pound) 🇬🇧</option>
+    <option value="INR">INR (Rupee) 🇮🇳</option>
+    <option value="AUD">AUD (Australian Dollar) 🇦🇺</option>
+    <option value="CAD">CAD (Canadian Dollar) 🇨🇦</option>
+  </select>
+
+  <table id="itemsTable">
+    <thead>
+      <tr>
+        <th>Description</th>
+        <th>Amount</th>
+        <th>Remove</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="text" placeholder="e.g. Web Design"></td>
+        <td><input type="number" placeholder="e.g. 1500" onchange="calculateTotal()"></td>
+        <td><button onclick="removeRow(this)">❌</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="buttons">
+    <button onclick="addItem()">➕ Add Item</button>
+    <button onclick="downloadInvoice()">⬇️ Download PDF</button>
+  </div>
+
+  <div class="total" id="totalAmount">Total: R0.00</div>
+</div>
+
+<script>
+function addItem() {
+  const table = document.getElementById('itemsTable').getElementsByTagName('tbody')[0];
+  const newRow = table.insertRow();
+  newRow.innerHTML = `
+    <td><input type="text" placeholder="e.g. Graphic Design"></td>
+    <td><input type="number" placeholder="e.g. 2000" onchange="calculateTotal()"></td>
+    <td><button onclick="removeRow(this)">❌</button></td>
+  `;
+}
+
+function removeRow(button) {
+  button.parentElement.parentElement.remove();
+  calculateTotal();
+}
+
+function calculateTotal() {
+  const currencySymbol = getCurrencySymbol(document.getElementById('currency').value);
+  let total = 0;
+  const amounts = document.querySelectorAll('#itemsTable tbody tr td:nth-child(2) input');
+  amounts.forEach(input => {
+    total += parseFloat(input.value) || 0;
+  });
+  document.getElementById('totalAmount').innerText = `Total: ${currencySymbol}${total.toFixed(2)}`;
+}
+
+function getCurrencySymbol(currency) {
+  switch (currency) {
+    case 'USD': return '$';
+    case 'EUR': return '€';
+    case 'GBP': return '£';
+    case 'INR': return '₹';
+    case 'AUD': return 'A$';
+    case 'CAD': return 'C$';
+    case 'ZAR': return 'R';
+    default: return '';
+  }
+}
+
+function downloadInvoice() {
+  const container = document.getElementById('invoiceContainer');
+  html2pdf().from(container).save('Invoice.pdf');
+}
+</script>
+
+</body>
+</html>
+
+     <a class="category" href="https://example.com/calendar" target="_blank">Calendar/Planner</a>
+     <a class="category" href="https://example.com/notes" target="_blank">Notes</a>
+   </div>
+ 
+   <!-- Reviews Section -->
+   <h2>Reviews</h2>
+   <p>Leave a review below. (Note: Reviews will be shown once authorized.)</p>
+   <form action="#" method="POST">
+     <input type="text" name="reviewer" placeholder="Your Name" required>
+     <textarea name="review" rows="4" placeholder="Your Review" required></textarea>
+     <button type="submit">Submit Review</button>
+   </form>
+ 
+   <!-- Contact Us Section -->
+   <h2>Contact Us</h2>
+   <form action="https://formspree.io/f/your-form-id" method="POST">
+     <input type="text" name="name" placeholder="Enter Name" required>
+     <input type="email" name="email" placeholder="Email" required>
+     <input type="tel" name="phone" placeholder="Phone" required>
+     <textarea name="message" rows="4" placeholder="Type Message" required></textarea>
+     <button type="submit">Send</button>
+   </form>
+ 
+   <!-- Footer -->
+   <footer>
+     © Copyrights of Nexora Assist 2026
+   </footer>
+ 
+ </body>
+ </html>
