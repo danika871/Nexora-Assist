@@ -1,70 +1,564 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nexora Assist</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      background-color: #f4f4f4;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-
-    .container {
-      text-align: center;
-      background-color: #054646;
-      padding: 50px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-
-    h1 {
-      color: white;
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      color: #d1f7f7;
-      font-size: 20px;
-      margin-bottom: 40px;
-    }
-
-    .button {
-      display: block;
-      width: 200px;
-      padding: 15px;
-      margin: 10px auto;
-      background-color: #054646;
-      color: white;
-      border: 2px solid white;
-      border-radius: 8px;
-      font-size: 18px;
-      text-decoration: none;
-      transition: background-color 0.3s, color 0.3s;
-    }
-
-    .button:hover {
-      background-color: white;
-      color: #054646;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girls With Attitude - Sassy-Classy, and a lil Bad-assy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Global Styles */
+        :root {
+            --primary-color: #ff6b9e;
+            --secondary-color: #ffd1dc;
+            --dark-color: #333;
+            --light-color: #f8f8f8;
+            --accent-color: #c71585;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            /* REPLACE WITH YOUR LOGO STYLING */
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .logo img {
+            height: 60px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
+                        url('https://via.placeholder.com/1920x1080') center/cover no-repeat;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--dark-color);
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: var(--accent-color);
+        }
+        
+        /* Collections Section */
+        .section-title {
+            text-align: center;
+            margin: 60px 0 40px;
+            font-size: 36px;
+            color: var(--primary-color);
+        }
+        
+        .collections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .collection-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .collection-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .collection-img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .collection-info {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .collection-info h3 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+        
+        /* Why Choose Us Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .feature i {
+            font-size: 40px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .feature h3 {
+            margin-bottom: 15px;
+        }
+        
+        /* About Section */
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+        
+        .about-img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .about-content p {
+            margin-bottom: 20px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            color: white;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 0 15px;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            .about {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-img {
+                order: -1;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .mobile-menu {
+                display: block;
+            }
+            
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            nav ul.show {
+                display: flex;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+            }
+            
+            .hero {
+                height: 400px;
+            }
+            
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <!-- REPLACE WITH YOUR LOGO -->
+                <img src="https://via.placeholder.com/200x60?text=Girls+With+Attitude+Logo" alt="Girls With Attitude Logo">
+            </a>
+            
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#scrunchies">Scrunchies</a></li>
+                    <li><a href="#bows">Bows</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <div class="container">
-    <h1>Nexora Assist</h1>
-    <p>Making each day easier</p>
-    <a href="signup.html" class="button">Sign Up</a>
-    <a href="login.html" class="button">Login</a>
-  </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Express Your Attitude</h1>
+            <p>Handmade hair accessories since 2019 - from mini to XXL scrunchies and bows for every style</p>
+            <a href="#scrunchies" class="btn">Shop Now</a>
+        </div>
+    </section>
 
+    <!-- Scrunchies Section -->
+    <section class="container" id="scrunchies">
+        <h2 class="section-title">Our Scrunchies</h2>
+        <div class="collections">
+            <div class="collection-card">
+                <!-- REPLACE WITH YOUR PRODUCT IMAGE -->
+                <img src="https://via.placeholder.com/600x600?text=Mini+Scrunchies" alt="Mini Scrunchies" class="collection-img">
+                <div class="collection-info">
+                    <h3>Mini Scrunchies</h3>
+                    <p>Perfect for subtle style</p>
+                </div>
+            </div>
+            
+            <div class="collection-card">
+                <!-- REPLACE WITH YOUR PRODUCT IMAGE -->
+                <img src="https://via.placeholder.com/600x600?text=Regular+Scrunchies" alt="Regular Scrunchies" class="collection-img">
+                <div class="collection-info">
+                    <h3>Regular Scrunchies</h3>
+                    <p>Classic fit for any hair type</p>
+                </div>
+            </div>
+            
+            <div class="collection-card">
+                <!-- REPLACE WITH YOUR PRODUCT IMAGE -->
+                <img src="https://via.placeholder.com/600x600?text=XXL+Scrunchies" alt="XXL Scrunchies" class="collection-img">
+                <div class="collection-info">
+                    <h3>XXL Scrunchies</h3>
+                    <p>Bold and voluminous for thick hair</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bows Section -->
+    <section class="container" id="bows">
+        <h2 class="section-title">Our Hair Bows</h2>
+        <div class="collections">
+            <div class="collection-card">
+                <!-- REPLACE WITH YOUR PRODUCT IMAGE -->
+                <img src="https://via.placeholder.com/600x600?text=Mini+Bows" alt="Mini Bows" class="collection-img">
+                <div class="collection-info">
+                    <h3>Mini Bows</h3>
+                    <p>Cute & dainty accents</p>
+                </div>
+            </div>
+            
+            <div class="collection-card">
+                <!-- REPLACE WITH YOUR PRODUCT IMAGE -->
+                <img src="https://via.placeholder.com/600x600?text=Regular+Bows" alt="Regular Bows" class="collection-img">
+                <div class="collection-info">
+                    <h3>Regular Bows</h3>
+                    <p>Statement-making elegance</p>
+                </div>
+            </div>
+            
+            <div class="collection-card">
+                <!-- REPLACE WITH YOUR PRODUCT IMAGE -->
+                <img src="https://via.placeholder.com/600x600?text=XXL+Bows" alt="XXL Bows" class="collection-img">
+                <div class="collection-info">
+                    <h3>XXL Bows</h3>
+                    <p>Dramatic flair for any occasion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="container">
+        <h2 class="section-title">Why Choose Us</h2>
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-heart"></i>
+                <h3>Handmade with Love</h3>
+                <p>Each piece is carefully crafted with attention to detail since 2019</p>
+            </div>
+            
+            <div class="feature">
+                <i class="fas fa-star"></i>
+                <h3>Premium Quality</h3>
+                <p>We use only the best fabrics for comfort and durability</p>
+            </div>
+            
+            <div class="feature">
+                <i class="fas fa-palette"></i>
+                <h3>Trendy Designs</h3>
+                <p>Styles that match your unique personality and outfits</p>
+            </div>
+            
+            <div class="feature">
+                <i class="fas fa-ruler-combined"></i>
+                <h3>Sizes for Everyone</h3>
+                <p>From mini to XXL - we've got your hair covered</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="container" id="about">
+        <div class="about">
+            <div class="about-content">
+                <h2>Our Story</h2>
+                <p>Girls With Attitude started in 2019 with a passion for fun, fashionable hair accessories. What began as a small hobby quickly grew into a beloved brand known for quality and style.</p>
+                <p>We believe every girl deserves to express herself with confidence—whether she's rocking a mini bow or an XXL scrunchie! Our mission is to create accessories that help you show off your unique attitude.</p>
+                <!-- REPLACE WITH YOUR LOGO -->
+                <img src="https://via.placeholder.com/200x100?text=Girls+With+Attitude" alt="Girls With Attitude Logo" style="margin-top: 20px;">
+            </div>
+            <!-- REPLACE WITH YOUR ABOUT IMAGE -->
+            <img src="https://via.placeholder.com/600x400?text=Our+Workspace" alt="Our Workspace" class="about-img">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#scrunchies">Scrunchies</a></li>
+                        <li><a href="#bows">Hair Bows</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Care Instructions</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="mailto:girlswithattitudesa@gmail.com">hello@girlswithattitudesa@gmail.com</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2019 Girls With Attitude. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if (document.querySelector('nav ul').classList.contains('show')) {
+                    document.querySelector('nav ul').classList.remove('show');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
